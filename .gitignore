@@ -1,0 +1,10 @@
+target/
+dist/
+node_modules/
+*.iml
+/.idea/*
+!.idea/runConfigurations/
+npm-debug.log
+*.orig
+*.versionsBackup
+*.log
