@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
         const eventSource = new EventSource('http://localhost:8080/findAll');
-        eventSource.addEventListener('message', (msg) => {
+        eventSource.addEventListener('message', (msg: MessageEvent) => {
             const user: User = JSON.parse(msg.data);
             this.users.push(user);
         });
